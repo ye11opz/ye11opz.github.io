@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Tags | PZ的小屋</title>
+    <title>test | PZ的小屋</title>
     <meta name="author" content="yellopz" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -161,7 +161,7 @@
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
             <div class="article">
     <div>
-        <h1>Tags</h1>
+        <h1>test</h1>
     </div>
     <div class="info">
         <span class="date">
@@ -171,11 +171,65 @@
             2024/9/13
         </span>
         
+        <span class="category">
+            <a href="/categories/test/">
+                <span class="icon">
+                    <i class="fa-solid fa-bookmark fa-fw"></i>
+                </span>
+                -test
+            </a>
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
+            
+            
+            <span class="tag">
+                
+                <a href="/tags/test/" style="color: #03a9f4">
+                    -test
+                </a>
+            </span>
+            
+        </span>
         
     </div>
     
     <div class="content" v-pre>
-        
+        <h1 id="这是测试文章标题"><a href="#这是测试文章标题" class="headerlink" title="这是测试文章标题"></a>这是测试文章标题</h1><h2 id="这是二级标题"><a href="#这是二级标题" class="headerlink" title="这是二级标题"></a>这是二级标题</h2><p>abcd<br>efgh</p>
+<p><strong>这是加粗</strong><br><em>这是斜体</em></p>
+<ul>
+<li>这是点号</li>
+</ul>
+<p>数学公式测试：<br>$$<br>\lim_{x \to 0}\frac{sin(x)}{x}&#x3D;1<br>$$</p>
+<p>图片测试：<br><img src="/test_picture.png"><br><em>测试用图片</em></p>
+<p>链接测试：<br><a href="www.baidu.com">百度</a></p>
+<p>表格测试：</p>
+<table>
+<thead>
+<tr>
+<th>a</th>
+<th align="center">bbbbbbbbbbbb</th>
+<th align="right">ccccccccccc</th>
+<th>d</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>1</td>
+<td align="center">2</td>
+<td align="right">3</td>
+<td>4</td>
+</tr>
+</tbody></table>
+<p>代码测试：<br><code>print(&#39;helloworld&#39;)</code></p>
+<pre><code class="python">print(&#39;helloworld&#39;)
+print(&#39;helloworld&#39;)
+print(&#39;helloworld&#39;)
+</code></pre>
+
     </div>
     
     
