@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Archives | pzのBlog</title>
+    <title>使用SD-Webui修复低清晰度图片 | pzのBlog</title>
     <meta name="author" content="yellopz" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -45,7 +45,9 @@
 
 
 
-<script src="/js/lib/search.js"></script>
+
+
+
 
 
 
@@ -157,148 +159,82 @@
 </transition>
 
         <div id="main" :class="loading ? 'into-enter-from': 'into-enter-active'">
+            <div class="article">
+    <div>
+        <h1>使用SD-Webui修复低清晰度图片</h1>
+    </div>
+    <div class="info">
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/10/12
+        </span>
+        
+        
+        <span class="tags">
+            <span class="icon">
+                <i class="fa-solid fa-tags fa-fw"></i>
+            </span>
             
-<div id="archives">
-    
-    <input id="search-bar" class="input" placeholder="搜索" v-model="rawSearch" />
-    
-    <div id="timeline-wrap" ref="timeline">
-        
-        <div class="timeline" data-title="test">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/9/13</div>
-                <a href="/2024/09/13/test2/">
-                    <h3>test</h3>
+            
+            <span class="tag">
+                
+                <a href="/tags/AI%E6%8A%80%E6%9C%AF/" style="color: #00a596">
+                    AI技术
                 </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/test/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            -test
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/test/" style="color: #00a596">
-                                -test
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="comfyui入门：文生图text2img">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/9/14</div>
-                <a href="/2024/09/14/ComfyUI%E5%85%A5%E9%97%A8%EF%BC%9A%E6%96%87%E7%94%9F%E5%9B%BEtext2img/">
-                    <h3>ComfyUI入门：文生图text2img</h3>
-                </a>
-                <div class="info">
-                    
-                    <span class="category">
-                        <a href="/categories/AI%E6%8A%80%E6%9C%AF/">
-                            <span class="icon">
-                                <i class="fa-solid fa-bookmark fa-fw"></i>
-                            </span>
-                            -[AI技术]
-                        </a>
-                    </span>
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/ComfyUI/" style="color: #ffa2c4">
-                                -[ComfyUI]
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="东五往事">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/11</div>
-                <a href="/2024/10/11/%E4%B8%9C%E4%BA%94%E5%BE%80%E4%BA%8B/">
-                    <h3>东五往事</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/Article/" style="color: #03a9f4">
-                                Article
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
-        
-        <div class="timeline" data-title="使用sd-webui修复低清晰度图片">
-            <div class="timeline-tail"></div>
-            <div class="timeline-content">
-                <div class="item-time">2024/10/12</div>
-                <a href="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/">
-                    <h3>使用SD-Webui修复低清晰度图片</h3>
-                </a>
-                <div class="info">
-                    
-                    
-                    <span class="tags">
-                        <span class="icon">
-                            <i class="fa-solid fa-tags fa-fw"></i>
-                        </span>
-                        
-                        
-                        <span class="tag">
-                            
-                            <a href="/tags/AI%E6%8A%80%E6%9C%AF/" style="color: #ffa2c4">
-                                AI技术
-                            </a>
-                        </span>
-                        
-                    </span>
-                    
-                </div>
-            </div>
-        </div>
+            </span>
+            
+        </span>
         
     </div>
+    
+    <div class="content" v-pre>
+        <h2 id="使用sdwebui修复低清晰度图片"><a class="markdownIt-Anchor" href="#使用sdwebui修复低清晰度图片"></a> 使用SD—Webui修复低清晰度图片</h2>
+<blockquote>
+<p>准备：SD-Webui工具，合适的AI模型,安装tiled-diffusion、tiled-vae插件<br>
+插件安装：选择“扩展”选项卡，选择“从网址安装”，输入插件的git仓库网址后点击安装，完毕后重启webui<br>
+<code>https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111</code></p>
+</blockquote>
+<p><font size="4">1.选择sd1.5-counterfeit绘画模型</font></p>
+<p><font size="4">2.选择“图生图”功能，将需要修复的图片拖入工作区</font></p>
+<p><font size="4">3.写入一些基础的正向提示词</font></p>
+<pre class="highlight"><code class>(masterpiece:1.2), best quality, highres,extremely detailed CG,perfect lighting,8k wallpaper
+</code></pre>
+<p><font size="4">4.选择采样方法：Euler，调整采样步数（一般为20不动），<mark>调整重绘幅度为0.2</mark></font></p>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/3.png" alt="图3"><br>
+<img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/4.png" alt="图4"></p>
+<p><font size="4">5.安装并启用tiled-diffusion插件，调整参数：</font><br>
+<b></b></p>
+<blockquote>
+<p>保持输入图像大小：勾选<br>
+潜空间分块宽度和高度：64-128之间（一般为96）<br>
+潜空间分块重叠：尽可能调大（80左右）<br>
+潜空间分块单批数量：按照显存调整，数字越大越吃显存，但可以加快运行速度（一般为7~8）<br>
+放大算法：R-ESRGAN 4x+<br>
+放大倍数：选择你需要的清晰度倍率<br>
+</p>
+</blockquote>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/1.png" alt="图1"></p>
+<p><font size="4">6.安装并启用tiled-vae插件，调整参数：</font><br>
+<b></b></p>
+<blockquote>
+<p>编码器、解码器分块大小一般不动<br>
+勾选使用快速编码器、快速解码器<br>
+如果输出图像有颜色问题，勾选快速编码器颜色修复<br>
+</p>
+</blockquote>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/2.png" alt="图2"></p>
+<p><font size="4">7.运行图生图</font></p>
+
+    </div>
+    
+    
+    
+    
+    
+    
+    
 </div>
 
             <footer id="footer">
@@ -329,6 +265,12 @@
         
     </div>
     <script src="/js/main.js"></script>
+    
+    
+
+
+
+
     
 </body>
 </html>

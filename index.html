@@ -186,6 +186,81 @@
         
 
 <div class="post">
+    <a href="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/">
+        <h2 class="post-title">使用SD-Webui修复低清晰度图片</h2>
+    </a>
+    <div class="category-and-date">
+        
+        <span class="date">
+            <span class="icon">
+                <i class="fa-solid fa-calendar fa-fw"></i>
+            </span>
+            2024/10/12
+        </span>
+        
+        
+    </div>
+    <div class="description">
+        <div class="content" v-pre>
+            
+            <h2 id="使用sdwebui修复低清晰度图片"><a class="markdownIt-Anchor" href="#使用sdwebui修复低清晰度图片"></a> 使用SD—Webui修复低清晰度图片</h2>
+<blockquote>
+<p>准备：SD-Webui工具，合适的AI模型,安装tiled-diffusion、tiled-vae插件<br>
+插件安装：选择“扩展”选项卡，选择“从网址安装”，输入插件的git仓库网址后点击安装，完毕后重启webui<br>
+<code>https://github.com/pkuliyi2015/multidiffusion-upscaler-for-automatic1111</code></p>
+</blockquote>
+<p><font size="4">1.选择sd1.5-counterfeit绘画模型</font></p>
+<p><font size="4">2.选择“图生图”功能，将需要修复的图片拖入工作区</font></p>
+<p><font size="4">3.写入一些基础的正向提示词</font></p>
+<pre class="highlight"><code class>(masterpiece:1.2), best quality, highres,extremely detailed CG,perfect lighting,8k wallpaper
+</code></pre>
+<p><font size="4">4.选择采样方法：Euler，调整采样步数（一般为20不动），<mark>调整重绘幅度为0.2</mark></font></p>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/3.png" alt="图3"><br>
+<img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/4.png" alt="图4"></p>
+<p><font size="4">5.安装并启用tiled-diffusion插件，调整参数：</font><br>
+<b></b></p>
+<blockquote>
+<p>保持输入图像大小：勾选<br>
+潜空间分块宽度和高度：64-128之间（一般为96）<br>
+潜空间分块重叠：尽可能调大（80左右）<br>
+潜空间分块单批数量：按照显存调整，数字越大越吃显存，但可以加快运行速度（一般为7~8）<br>
+放大算法：R-ESRGAN 4x+<br>
+放大倍数：选择你需要的清晰度倍率<br>
+</p>
+</blockquote>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/1.png" alt="图1"></p>
+<p><font size="4">6.安装并启用tiled-vae插件，调整参数：</font><br>
+<b></b></p>
+<blockquote>
+<p>编码器、解码器分块大小一般不动<br>
+勾选使用快速编码器、快速解码器<br>
+如果输出图像有颜色问题，勾选快速编码器颜色修复<br>
+</p>
+</blockquote>
+<p><img src="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/2.png" alt="图2"></p>
+<p><font size="4">7.运行图生图</font></p>
+
+            
+        </div>
+    </div>
+    <div class="post-tags">
+        
+        <span class="icon">
+            <i class="fa-solid fa-tags fa-fw"></i>
+        </span>
+        
+        
+        
+        <span class="tag">
+            
+            <a href="/tags/AI%E6%8A%80%E6%9C%AF/" style="color: #ff7d73">AI技术</a>
+        </span>
+        
+    </div>
+    <a href="/2024/10/12/%E4%BD%BF%E7%94%A8SD-Webui%E4%BF%AE%E5%A4%8D%E4%BD%8E%E6%B8%85%E6%99%B0%E5%BA%A6%E5%9B%BE%E7%89%87/" class="go-post">阅读全文</a>
+</div>
+
+<div class="post">
     <a href="/2024/10/11/%E4%B8%9C%E4%BA%94%E5%BE%80%E4%BA%8B/">
         <h2 class="post-title">东五往事</h2>
     </a>
@@ -491,7 +566,7 @@ R学姐刚转区块链，肖江让她组织写一篇survey（综述）。如果�
         
         <span class="tag">
             
-            <a href="/tags/Article/" style="color: #03a9f4">Article</a>
+            <a href="/tags/Article/" style="color: #00a596">Article</a>
         </span>
         
     </div>
@@ -663,7 +738,7 @@ efgh</p>
         
         <span class="tag">
             
-            <a href="/tags/test/" style="color: #00a596">-test</a>
+            <a href="/tags/test/" style="color: #03a9f4">-test</a>
         </span>
         
     </div>
